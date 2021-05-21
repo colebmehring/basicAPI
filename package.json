@@ -1,0 +1,25 @@
+{
+  "name": "sparkpostnew",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "brew services start mongodb-community && nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:db": "brew services start mongodb-community",
+    "restart:db": "brew services restart mongodb-community",
+    "start:server": "nodemon server"
+  },
+  "author": "Cole Mehring",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.10",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5"
+  }
+}
