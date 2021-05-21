@@ -1,7 +1,7 @@
-# basicAPI
+# basic API
 
 ## shortcut
-I'll include some gifs here so you can see it running if it's too much of a hassle locally
+https://vimeo.com/553219541/0cc0b1c93b
 
 ## Prereq 
 the following are installed:
