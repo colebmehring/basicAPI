@@ -10,6 +10,7 @@ the following are installed:
 -homebrew (for package.json commands - can be run without)
 
 ## Running the project
+npm i
 npm run start
 
 if missing brew: 
