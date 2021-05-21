@@ -12,6 +12,6 @@ the following are installed:<br/>
 ## Running the project
 npm run start
 
-workaround if missing homebrew: 
+workaround if missing homebrew: <br/>
 -run mongodb with your favorite package manager <br/>
 -npm run start:server
