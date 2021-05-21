@@ -10,9 +10,10 @@ the following are installed:<br/>
 -homebrew (for package.json commands - can be run without)
 
 ## Running the project
-npm i
-npm run start
+1) npm i <br/>
+2) npm run start
 
 workaround if missing homebrew: <br/>
--run mongodb with your favorite package manager <br/>
--npm run start:server
+1) run mongodb with your favorite package manager <br/>
+2) npm i <br/>
+3) npm run start:server
