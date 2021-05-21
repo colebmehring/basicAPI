@@ -5,16 +5,18 @@ const DataSchema = require('../models/model');
 
 //Add or update data in DB
 routes.route('/').post((req, res) => {
-  console.log(req.body);
   DataSchema.findOneAndUpdate({
     name: req.body.name
   }, {
-    $set: req.body
+    $set: { 
+      age: req.body.age
+    }
   }, {
-    upsert: true
+    upsert: true,
+    runValidators: true
   }, (err) => {
     if(err){
-      return res.status(500).json('could not post :(');
+      return res.status(500).send('BAD_DATA');
     }else{
       return res.status(200).json('successful post :)');
     }
@@ -26,9 +28,11 @@ routes.route('/:name').get((req, res) => {
   DataSchema.findOne({
     name: req.params.name    
   }, (err, data) => {
-    if(err){
-      return res.status(404).json('could not update. perhaps name doesn\'t exist in the DB');
+    //return NOT_FOUND error if there are any issues with the data
+    if(err || !data){
+      return res.status(404).json('NOT_FOUND');
     }else{
+    //if data is good, return it!
       return res.status(200).json({
         'name': data.name,
         'age': data.age
