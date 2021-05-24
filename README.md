@@ -1,7 +1,8 @@
 # basic API
 
 ## shortcut
-https://vimeo.com/553230101/d37d4ba37c
+youtube: https://www.youtube.com/watch?v=h8PXMsTgERc
+vimeo: https://vimeo.com/553230101/
 
 ## Prereq 
 the following are installed:<br/>
